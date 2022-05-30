@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Windows\AddEditWindows\AddEditPriorityWindow.xaml.cs">
+      <DependentUpon>AddEditPriorityWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -80,15 +83,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\AddEditPages\AddEditPriorityPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\AddEditPages\AddProductSalePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\DataPages\AgentsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddEditWindows\AddEditPriorityWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,9 +157,6 @@
     </Compile>
     <Compile Include="Pages\AddEditPages\AddEditAgentPage.xaml.cs">
       <DependentUpon>AddEditAgentPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\AddEditPages\AddEditPriorityPage.xaml.cs">
-      <DependentUpon>AddEditPriorityPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AddEditPages\AddProductSalePage.xaml.cs">
       <DependentUpon>AddProductSalePage.xaml</DependentUpon>

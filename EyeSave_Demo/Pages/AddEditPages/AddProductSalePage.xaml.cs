@@ -34,7 +34,7 @@ namespace EyeSave_Demo.Pages.AddEditPages
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AddEditAgentPage(_agent, true));
+                NavigationService.Navigate(new AddEditAgentPage(_agent, true));
         }
 
         private void AddSaleBtn_Click(object sender, RoutedEventArgs e)

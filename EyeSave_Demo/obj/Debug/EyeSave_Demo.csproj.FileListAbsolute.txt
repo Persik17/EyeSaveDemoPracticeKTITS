@@ -23,10 +23,10 @@ C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\De
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\EyeSave_Demo_Content.g.cs
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\DataPages\AgentsPage.baml
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\EyeSave_Demo.csproj.CopyComplete
-C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\AddEditPages\AddEditPriorityPage.g.cs
-C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\AddEditPages\AddEditPriorityPage.baml
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\AddEditPages\AddEditAgentPage.g.cs
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\AddEditPages\AddEditAgentPage.baml
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\AddEditPages\AddProductSalePage.g.cs
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Pages\AddEditPages\AddProductSalePage.baml
 C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\App.baml
+C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Windows\AddEditWindows\AddEditPriorityWindow.g.cs
+C:\Users\kraic\OneDrive\Рабочий стол\EyeSave_Demo\EyeSave_Demo\obj\Debug\Windows\AddEditWindows\AddEditPriorityWindow.baml

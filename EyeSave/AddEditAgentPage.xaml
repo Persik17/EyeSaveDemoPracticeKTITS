@@ -1,0 +1,60 @@
+﻿<Page x:Class="EyeSave_Demo.Pages.AddEditPages.AddEditAgentPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EyeSave_Demo.Pages.AddEditPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditAgentPage">
+
+    <StackPanel Orientation="Vertical" Margin="15">
+        <StackPanel Orientation="Horizontal" Height="380" VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical" Width="300" Height="380" VerticalAlignment="Top">
+                <TextBlock Text="Наименование: " Margin="0,5,0,0"/>
+                <TextBox x:Name="TitleTb" PreviewTextInput="TitleTb_PreviewTextInput" Text="{Binding Title}"/>
+                <TextBlock Text="Тип агента: " Margin="0,5,0,0"/>
+                <ComboBox x:Name="AgentTypeCb" SelectedItem="{Binding AgentType}" Height="25" DisplayMemberPath="Title" SelectedValuePath="Title"/>
+                <TextBlock Text="Приоритет: " Margin="0,5,0,0"/>
+                <TextBox x:Name="PriorityTb" PreviewTextInput="PriorityTb_PreviewTextInput" Text="{Binding Priority}" />
+                <TextBlock Text="Адрес: " Margin="0,5,0,0"/>
+                <TextBox x:Name="AddressTb" PreviewTextInput="AddressTb_PreviewTextInput" Text="{Binding Address}"/>
+                <TextBlock Text="ИНН: " Margin="0,5,0,0"/>
+                <TextBox x:Name="INNTb" MaxLength="12" PreviewTextInput="INNTb_PreviewTextInput" Text="{Binding INN}"/>
+                <TextBlock Text="КПП: " Margin="0,5,0,0"/>
+                <TextBox x:Name="KPPTb" MaxLength="9" PreviewTextInput="KPPTb_PreviewTextInput" Text="{Binding KPP}"/>
+                <TextBlock Text="Имя директора: " Margin="0,5,0,0"/>
+                <TextBox x:Name="DirNameTb" PreviewTextInput="DirNameTb_PreviewTextInput" Text="{Binding DirectorName}"/>
+                <TextBlock Text="Телефон: " Margin="0,5,0,0"/>
+                <TextBox x:Name="PhoneTb" MaxLength="15" PreviewTextInput="PhoneTb_PreviewTextInput" Text="{Binding Phone}"/>
+                <TextBlock Text="Email: " Margin="0,5,0,0"/>
+                <TextBox x:Name="EmailTb" Text="{Binding Email}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,0,0,0" Width="120" Height="350" VerticalAlignment="Top">
+                <TextBlock Text="Логотип: " Margin="0,5,0,0" HorizontalAlignment="Left"/>
+                <Border Width="100" Height="100" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="Black">
+                    <Image x:Name="LogoImg" Source="{Binding Logo}" Width="100" Height="100"/>
+                </Border>
+                <Button x:Name="SaveImageBtn" Click="SaveImageBtn_Click" Background="#B175EE" Width="90" HorizontalAlignment="Left" Height="25" Margin="5,10,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,0,0,0" Width="300" Height="350" VerticalAlignment="Top">
+                <DataGrid x:Name="HistorySalesDg" Height="300" Width="300" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Кол-во" Binding="{Binding Product.Title}" Width="120"/>
+                        <DataGridTextColumn Header="Кол-во" Binding="{Binding ProductCount}"/>
+                        <DataGridTextColumn Header="Дата продажи" Binding="{Binding SaleDate}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="AddSalesBtn" Click="AddSalesBtn_Click" Width="140" Height="20" Margin="5" Content="Добавить"/>
+                    <Button x:Name="DeleteSalesBtn" Click="DeleteSalesBtn_Click" Width="140" Height="20" Margin="5" Content="Удалить"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="SaveAgentBtn" Click="SaveAgentBtn_Click" Width="140" Height="20" Margin="5" Content="Сохранить"/>
+            <Button x:Name="DeleteAgentBtn" Click="DeleteAgentBtn_Click" Width="140" Height="20" Margin="5" Content="Удалить"/>
+            <Button x:Name="BackBtn" Click="BackBtn_Click" Width="140" Height="20" Margin="5" Content="Назад"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -1,5 +1,6 @@
 ﻿using EyeSave_Demo.Model;
 using EyeSave_Demo.Pages.AddEditPages;
+using EyeSave_Demo.Windows.AddEditWindows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -219,8 +220,9 @@ namespace EyeSave_Demo.Pages.DataPages
             {
                 agents.Add(item as Agent);
             }
-                
-            NavigationService.Navigate(new AddEditPriorityPage(agents));
+
+            AddEditPriorityWindow window = new AddEditPriorityWindow(agents);
+            window.ShowDialog();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
